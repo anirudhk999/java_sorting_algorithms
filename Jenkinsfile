@@ -5,6 +5,9 @@ pipeline {
 REPO_URL = 'https://github.com/your-repo-url.git'
         MAIN_BRANCH = 'main'
     }
+    tools {
+        maven 'Maven 3.8.4'
+    }
     stages {
         stage('Get the repo')
         {
