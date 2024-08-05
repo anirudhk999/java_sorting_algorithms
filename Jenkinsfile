@@ -5,12 +5,12 @@ pipeline {
     }
     stages {
 
-        stage('Get the Repo')
-        {
-            steps{
-                bat 'git clone "https://github.com/anirudhk999/java_sorting_algorithms"'
-            }
-        }
+        // stage('Get the Repo')
+        // {
+        //     steps{
+        //         bat 'git clone "https://github.com/anirudhk999/java_sorting_algorithms"'
+        //     }
+        // }
         stage('Build') {
             steps {
                 bat 'mvn -B -DskipTests clean package'
@@ -22,11 +22,6 @@ pipeline {
                 // Compile the Java code and run the unit tests on Windows
                 bat 'mvn test'
 
-            }
-            post {
-                always {
-                    cleanWs()
-                }
             }
         }
 
