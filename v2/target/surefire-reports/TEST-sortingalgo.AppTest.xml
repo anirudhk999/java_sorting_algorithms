@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sortingalgo.AppTest" time="0.056" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="sortingalgo.AppTest" time="0.041" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.16\bin"/>
-    <property name="sun.java.command" value="C:\Users\40041223\AppData\Local\Temp\surefire11957904371626319288\surefirebooter3723995382152673664.jar C:\Users\40041223\AppData\Local\Temp\surefire11957904371626319288 2024-08-05T16-44-01_121-jvmRun1 surefire13948137062394609292tmp surefire_07060008019277116661tmp"/>
+    <property name="sun.java.command" value="C:\Users\40041223\AppData\Local\Temp\surefire15572518892645910177\surefirebooter1190654032228948672.jar C:\Users\40041223\AppData\Local\Temp\surefire15572518892645910177 2024-08-05T16-50-36_075-jvmRun1 surefire9546901038271203189tmp surefire_04733054488131447644tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\java_sorting_algorithms\java_sorting_algorithms\v2\target\test-classes;C:\java_sorting_algorithms\java_sorting_algorithms\v2\target\classes;C:\Users\40041223\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\40041223\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\40041223\AppData\Local\Temp\surefire11957904371626319288\surefirebooter3723995382152673664.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\40041223\AppData\Local\Temp\surefire15572518892645910177\surefirebooter1190654032228948672.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.16+11-LTS-199"/>
@@ -60,10 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testMergeSort" classname="sortingalgo.AppTest" time="0.006"/>
+  <testcase name="testMergeSort" classname="sortingalgo.AppTest" time="0.004"/>
   <testcase name="shouldAnswerWithTrue" classname="sortingalgo.AppTest" time="0"/>
   <testcase name="testSelectionSort" classname="sortingalgo.AppTest" time="0"/>
   <testcase name="testBubbleSort" classname="sortingalgo.AppTest" time="0"/>
-  <testcase name="testInsertionSort" classname="sortingalgo.AppTest" time="0"/>
+  <testcase name="testInsertionSort" classname="sortingalgo.AppTest" time="0.001"/>
   <testcase name="testQuickSort" classname="sortingalgo.AppTest" time="0"/>
 </testsuite>
