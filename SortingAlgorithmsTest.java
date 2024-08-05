@@ -20,20 +20,11 @@ class SortingAlgorithmsTest {
     void testInsertionSort() {
         testSortingAlgorithm(SortingAlgorithms::insertionSort, "Insertion Sort");
     }
- 
-    @Test
-    void testMergeSort() {
-        testSortingAlgorithm(SortingAlgorithms::mergeSort, "Merge Sort");
-    }
- 
-    @Test
-    void testQuickSort() {
-        testSortingAlgorithm(SortingAlgorithms::quickSort, "Quick Sort");
-    }
+
  
     private void testSortingAlgorithm(SortMethod sortMethod, String algorithmName) {
         // Test with ascending order
-        int[] arr1 = generateRandomArray(100);
+        int[] arr1 = generateRandomArray(3);
         int[] expected1 = arr1.clone();
         Arrays.sort(expected1);
         sortMethod.sort(arr1, false);

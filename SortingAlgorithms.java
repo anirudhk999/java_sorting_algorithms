@@ -44,67 +44,9 @@ public class SortingAlgorithms {
         }
     }
  
-    public static void mergeSort(int[] arr, boolean reverse) {
-        if (arr.length > 1) {
-            int mid = arr.length / 2;
-            int[] left = Arrays.copyOfRange(arr, 0, mid);
-            int[] right = Arrays.copyOfRange(arr, mid, arr.length);
- 
-            mergeSort(left, reverse);
-            mergeSort(right, reverse);
- 
-            merge(arr, left, right, reverse);
-        }
-    }
- 
-    private static void merge(int[] arr, int[] left, int[] right, boolean reverse) {
-        int i = 0, j = 0, k = 0;
-        while (i < left.length && j < right.length) {
-            if ((!reverse && left[i] <= right[j]) || (reverse && left[i] >= right[j])) {
-                arr[k++] = left[i++];
-            } else {
-                arr[k++] = right[j++];
-            }
-        }
-        while (i < left.length) {
-            arr[k++] = left[i++];
-        }
-        while (j < right.length) {
-            arr[k++] = right[j++];
-        }
-    }
- 
-    public static void quickSort(int[] arr, boolean reverse) {
-        quickSort(arr, 0, arr.length - 1, reverse);
-    }
- 
-    private static void quickSort(int[] arr, int low, int high, boolean reverse) {
-        if (low < high) {
-            int pi = partition(arr, low, high, reverse);
-            quickSort(arr, low, pi - 1, reverse);
-            quickSort(arr, pi + 1, high, reverse);
-        }
-    }
- 
-    private static int partition(int[] arr, int low, int high, boolean reverse) {
-        int pivot = arr[high];
-        int i = (low - 1);
-        for (int j = low; j < high; j++) {
-            if ((!reverse && arr[j] < pivot) || (reverse && arr[j] > pivot)) {
-                i++;
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[high];
-        arr[high] = temp;
-        return i + 1;
-    }
  
     public static void main(String[] args) {
-Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         
         System.out.println("Enter the numbers to sort (space-separated):");
         String input = scanner.nextLine();
@@ -138,10 +80,10 @@ Scanner scanner = new Scanner(System.in);
                 insertionSort(arr, reverse);
                 break;
             case 4:
-                mergeSort(arr, reverse);
+                //mergeSort(arr, reverse);
                 break;
             case 5:
-                quickSort(arr, reverse);
+                //quickSort(arr, reverse);
                 break;
             default:
                 System.out.println("Invalid choice");
