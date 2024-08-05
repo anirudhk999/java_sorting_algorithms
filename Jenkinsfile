@@ -11,7 +11,6 @@ REPO_URL = 'https://github.com/your-repo-url.git'
                 script {
                     try {
                         // Compile the Java code and run the unit tests on Windows
-                        bat 'cd v2'
                         bat 'mvn test'
                         env.TEST_RESULT = 'SUCCESS'
                     } catch (Exception e) {
