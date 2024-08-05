@@ -26,11 +26,6 @@ REPO_URL = 'https://github.com/your-repo-url.git'
                 }
             }
         }
-        post{
-            steps{
-                bat 'rmdir java_sorting_algorithms'
-            }
-        }
 
     }
 }
