@@ -5,7 +5,7 @@ pipeline {
     }
     stages {
 
-        satge('Get the Repo')
+        stage('Get the Repo')
         {
             steps{
                 bat 'git clone "https://github.com/anirudhk999/java_sorting_algorithms"'
