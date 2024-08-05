@@ -9,12 +9,6 @@ REPO_URL = 'https://github.com/your-repo-url.git'
         maven 'Maven 3.8.4'
     }
     stages {
-        stage('Get the repo')
-        {
-            steps{
-                bat 'git clone "https://github.com/anirudhk999/java_sorting_algorithms" '
-            }
-        }
         stage('Run Unit Tests') {
             steps {
                 script {
