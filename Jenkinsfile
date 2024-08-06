@@ -36,6 +36,10 @@ pipeline {
        maven 'Maven 3.8.4'
     }
 
+    triggers
+    {
+        githubPush()
+    }
 
     environment {
         GIT_REPO = 'https://github.com/anirudhk999/java_sorting_algorithms'
