@@ -77,36 +77,7 @@ public class App
             arr[k++] = right[j++];
         }
     }
- 
-    public static void quickSort(int[] arr, boolean reverse) {
-        quickSort(arr, 0, arr.length - 1, reverse);
-    }
- 
-    private static void quickSort(int[] arr, int low, int high, boolean reverse) {
-        if (low < high) {
-            int pi = partition(arr, low, high, reverse);
-            quickSort(arr, low, pi - 1, reverse);
-            quickSort(arr, pi + 1, high, reverse);
-        }
-    }
- 
-    private static int partition(int[] arr, int low, int high, boolean reverse) {
-        int pivot = arr[high];
-        int i = (low - 1);
-        for (int j = low; j < high; j++) {
-            if ((!reverse && arr[j] < pivot) || (reverse && arr[j] > pivot)) {
-                i++;
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-        }
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[high];
-        arr[high] = temp;
-        return i + 1;
-    }
- 
+  
     public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
         
@@ -143,9 +114,6 @@ public class App
                 break;
             case 4:
                 mergeSort(arr, reverse);
-                break;
-            case 5:
-                quickSort(arr, reverse);
                 break;
             default:
                 System.out.println("Invalid choice");
