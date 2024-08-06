@@ -72,7 +72,7 @@ pipeline {
             steps {
                 script {
                     bat '''
-                    git checkout master
+                    git checkout -f master
                     git merge dev
                     git push origin master
                     '''
